@@ -1,7 +1,7 @@
 python_binary(
-    name='hello-server-bin',
+    name='hello',
     dependencies = [
-        'src/main/python/hello',
+        "3rdparty/python:grpcio"
     ],
     source='main.py',
     # No need to set compatibility if it matches the default interpreter constraints.
